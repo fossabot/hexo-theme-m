@@ -24,7 +24,7 @@
 
 ## Demo
 
-[Theme-M Demo](0xb917.github.io/hexo-theme-m)
+[Theme-M Demo](https://0xb917.github.io/hexo-theme-m)
 
 ## Docs
 
