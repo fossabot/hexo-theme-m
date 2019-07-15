@@ -6,7 +6,7 @@
   <link href="/hexo-theme-m/atom.xml" rel="self"/>
   
   <link href="https://0xb917.github.io/hexo-theme-m/"/>
-  <updated>2019-07-15T16:16:03.455Z</updated>
+  <updated>2019-07-15T16:56:45.426Z</updated>
   <id>https://0xb917.github.io/hexo-theme-m/</id>
   
   <author>
@@ -21,17 +21,17 @@
     <link href="https://0xb917.github.io/hexo-theme-m/2013/12/26/images/"/>
     <id>https://0xb917.github.io/hexo-theme-m/2013/12/26/images/</id>
     <published>2013-12-26T14:46:49.000Z</published>
-    <updated>2019-07-15T16:16:03.455Z</updated>
+    <updated>2019-07-15T16:56:45.426Z</updated>
     
-    <content type="html"><![CDATA[<p>This is a image test post.</p><p><img src="hexo-theme-m/assets/wallpaper-2572384.jpg" alt></p><p><img src="hexo-theme-m/assets/wallpaper-2311325.jpg" alt="Caption"></p><p><img src="hexo-theme-m/assets/wallpaper-878514.jpg" alt></p><p><img src="https://placehold.it/350x150.jpg" alt="Small Picture"></p>]]></content>
+    <content type="html"><![CDATA[<p>This is a image test post.</p><p><img src="assets/wallpaper-2572384.jpg" alt></p><p><img src="assets/wallpaper-2311325.jpg" alt="Caption"></p><p><img src="assets/wallpaper-878514.jpg" alt></p><p><img src="https://placehold.it/350x150.jpg" alt="Small Picture"></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;This is a image test post.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;hexo-theme-m/assets/wallpaper-2572384.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;hexo-theme-m/assets/wallpape
+&lt;p&gt;&lt;img src=&quot;assets/wallpaper-2572384.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/wallpaper-2311325.jpg&quot; alt=&quot;Captio
       
     
     </summary>
@@ -107,7 +107,7 @@
     <link href="https://0xb917.github.io/hexo-theme-m/2013/12/25/gallery-post/"/>
     <id>https://0xb917.github.io/hexo-theme-m/2013/12/25/gallery-post/</id>
     <published>2013-12-24T16:16:18.000Z</published>
-    <updated>2019-07-15T16:15:54.251Z</updated>
+    <updated>2019-07-15T16:56:23.884Z</updated>
     
     <content type="html"><![CDATA[<p>This post contains 4 photos:</p><ul><li>Widescreen wallpaper</li><li>Portrait photo</li><li>Dual widescreen wallpaper</li><li>Small photo</li></ul><p>All photos should be displayed properly.</p><p><em>From <a href="http://wallbase.cc" target="_blank" rel="noopener">Wallbase.cc</a></em></p>]]></content>
     
