@@ -1,0 +1,47 @@
+version: 190715
+
+head:
+    favicon:
+    high_res_favicon:
+    apple_touch_icon:
+    og:
+        twitter_id:
+        twitter_site:
+        fb_admins:
+        fb_app_id:
+    google:
+        analytics_id:
+        site_verification:
+    keywords:
+
+url:
+    rss:
+    sidebar_avatar:
+    footer_hostedon: 
+
+style:
+    background: "background-color: #303030"
+    m_container: true
+    m_avatar: true
+
+img:
+    avatar: ""
+
+post:
+    excerpt: subtitle # subtitle / content
+    thumbnail: default # default / random
+    show_categories: true # true / false
+    show_tags: true # true /false
+
+mdui:
+    primary: blue # red / pink / purple / deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange / brown / grey / blue-grey
+    accent: blue # red / pink / purple deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange
+    layout: dark # dark / light
+    card_media_covered: default # default / gradient / transparent
+    shadow: '0' # 0(false) / 1-16(true)
+    hoverable: true # false(none) / true(mdui-hoverable)
+    url: local
+
+footer:
+    copyright_since: 
+    hostedon: 

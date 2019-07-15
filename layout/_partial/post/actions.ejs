@@ -1,0 +1,33 @@
+<div class="mdui-card-actions">
+    <% if(post.categories && post.categories.length && theme.post.show_categories === true) { %>
+    <div class="mdui-chip mdui-m-r-1 mdui-color-theme-a200 mdui-ripple">
+    <%- list_categories(post.categories, {
+	        show_count: false,
+	        class: 'mdui-chip-title mdui-text-color-theme-text m',
+	        style: '',
+	        separator: '</div><div class="mdui-chip mdui-m-r-1 mdui-color-theme-a200 mdui-ripple">'
+	    }) %>
+    </div>
+    <% } %>
+    <% if(post.tags && post.tags.length && theme.post.show_tags === true) { %>
+    <div class="mdui-chip mdui-m-r-1 mdui-color-theme-a400 mdui-ripple">
+        <%- list_tags(post.tags, {
+		    show_count: false,
+	        class: 'mdui-chip-title mdui-text-color-theme-text m',
+	        style: '',
+	        separator: '</div><div class="mdui-chip mdui-m-r-1 mdui-color-theme-a400 mdui-ripple">'
+	    }) %>
+    </div>
+    <% } %>
+    <div class="mdui-chip mdui-float-right mdui-ripple" mdui-menu="{target: '#info', align: 'right', position: 'top', covered: 'true'}" >
+        <a class="mdui-chip-title m-typo-link"><%- date(post.date, "YYYY-MM-DD") %></a>
+    </div>
+    <ul class="mdui-menu mdui-menu-cascade" id="info">
+        <li class="mdui-menu-item">
+            <a class="mdui-ripple"><%= __('post.date') %>: <%- date(post.date, "YYYY-MM-DD HH:MM") %></a>
+        </li>
+        <li class="mdui-menu-item">
+            <a class="mdui-ripple"><%= __('post.updated') %>: <%- date(post.updated, "YYYY-MM-DD HH:MM") %></a>
+        </li>
+    </ul>
+</div>

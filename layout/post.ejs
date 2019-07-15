@@ -1,0 +1,8 @@
+<div class="mdui-card mdui-m-b-5 mdui-shadow-<%= theme.mdui.shadow %> <% if(theme.mdui.hoverable === true) { %>mdui-hoverable<% } %>">
+    <%- partial('_partial/post/primary', {post: page}) %>
+    <%- partial('_partial/post/actions', {post: page}) %>
+    <div class="mdui-card-content mdui-typo">
+        <%- page.content %>
+    </div>
+</div>
+<%- partial('_widget/paginator_post') %>

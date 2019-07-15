@@ -1,0 +1,8 @@
+<div class="mdui-m-l-2 mdui-typo mdui-text-color-theme-disabled">
+    <p class="mdui-m-b-0">© <% if(theme.footer.copyright_since) { %><%= theme.footer.copyright_since %> - <% } %> <script>var date = new Date();document.write(date.getFullYear());console.info("Theme-M | Ver:<%= theme.version %>")</script> <%= config.author %></p>
+<% if(theme.footer.hostedon) { %>
+    <p class="mdui-m-b-0">Hosted on <a href="<%= theme.url.footer_hostedon %>"><%= theme.footer.hostedon %></a></p>
+<% } %>
+<p class="mdui-m-b-0">Powered by <a href="https://hexo.io/">Hexo</a></p>
+<p class="mdui-m-b-0">Theme - <a href="https://github.com/0xb917/hexo-theme-m">M</a></p>
+</div>

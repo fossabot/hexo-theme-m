@@ -1,0 +1,9 @@
+<% if (post.link){ %>
+    <div class="mdui-card-primary-title"><b><a class="mdui-text-color-theme-text m-link" href="<%- url_for(post.link) %>"><%= post.title %></a></b></div>
+<% } else if (post.title){ %>
+    <div class="mdui-card-primary-title"><b><a class="mdui-text-color-theme-text m-link" href="<%- url_for(post.path) %>"><%= post.title %></a></b></div>
+<% } else { %>
+    <div class="mdui-card-primary-title"><b><a class="mdui-text-color-theme-text m-link" href="<%- url_for(post.path) %>">no title</a></b></div>
+<% } if(post.excerpt && theme.post.excerpt === 'subtitle' && !is_post() && !is_page()) {%>
+    <div class="mdui-card-primary-subtitle"><%- post.excerpt %></div>
+<% } %>

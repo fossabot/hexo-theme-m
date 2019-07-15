@@ -1,0 +1,14 @@
+sidebar:
+    homepage: "Home"
+    archive: "Archives"
+    category: "Categories"
+    tag: "Tags"
+
+index:
+    continue: "Read all"
+    prev: '<i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>Newer'
+    next: '<i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>Older'
+
+post:
+    date: "Created"
+    updated: "Updated"

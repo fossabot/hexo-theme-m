@@ -1,0 +1,26 @@
+<!-- <div class="mdui-dialog" id="m-share" style="min-height: 500px">
+    <div class="mdui-tab mdui-tab-full-width" id="example4-tab">
+        <a href="#example4-tab1" class="mdui-ripple">social</a>
+        <a href="#example4-tab2" class="mdui-ripple">qrcode</a>
+    </div>
+    <div id="example4-tab1" class="mdui-p-a-2">
+        <div class="mdui-textfield">
+            <textarea class="mdui-textfield-input" rows="5"><%= post.permalink %></textarea>
+        </div>
+    </div>
+    <div id="example4-tab2" class="mdui-p-a-2">
+        <% if(theme.share.qrcode.use === 'plugin') { %>
+            <img class="mdui-center mdui-img-fluid mdui-img-rounded" src="<%- qrcode(url, {
+                margin: 2
+            }) %>">
+        <% } else if(theme.share.qrcode.use === 'google') { %>
+            <img class="mdui-center mdui-img-fluid mdui-img-rounded" src="https://chart.googleapis.com/chart?cht=qr&chs=384x384&choe=UTF-8&chld=L|4&chl=<%= page.permalink %>" alt="qrcode" />
+        <% } %>
+    </div>
+</div>
+<script>
+    var tab = new mdui.Tab('#example4-tab');
+    document.getElementById('m-share').addEventListener('open.mdui.dialog', function () {
+        tab.handleUpdate();
+    });
+</script> -->

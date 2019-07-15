@@ -1,0 +1,9 @@
+<% if(page.total > 1){ %>
+    <nav class="mdui-row mdui-m-b-5">
+        <%- m_paginator({
+            prev_text: __('index.prev'),
+            next_text: __('index.next'),
+            space: ''
+        }) %>
+    </nav>
+<% } %>

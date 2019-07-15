@@ -1,0 +1,52 @@
+<head>
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title -->
+    <%
+        var title = page.title;
+        if (is_archive()) {
+            title = __('sidebar.archive');
+            if (is_month()) {
+                title += ': ' + page.year + '/' + page.month;
+            }
+            else if (is_year()) {
+                title += ': ' + page.year;
+            }
+        }
+        else if (is_category()) {
+            title = __('sidebar.category') + ': ' + page.category;
+        }
+        else if (is_tag()) {
+            title = __('sidebar.tag') + ': ' + page.tag;
+        }
+    %>
+    <title><% if (title) { %><%= title + ' - ' %><% } %><%= config.title %></title>
+
+    <!-- MDUI 0.4.2 -->
+    <% if(theme.mdui.url === 'local') { %>
+        <link type="text/css" href="/css/mdui.min.css" rel="stylesheet"/>
+        <script type="text/javascript" src="/js/mdui.min.js"></script>
+    <% } else if(theme.mdui.url === 'cdnjs') { %>
+        <%- css('https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css') %>
+        <%- js('https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js') %>
+    <% } else { %>
+        <link type="text/css" href="<%= theme.mdui.url %>/css/mdui.min.css" rel="stylesheet"/>
+        <script type="text/javascript" src="<%= theme.mdui.url %>/js/mdui.min.js"></script>
+    <% } %>
+
+    <!-- Theme-M -->
+    <%- css('css/style.css') %>
+    <%- js('js/main.js') %>
+
+    <!-- Open Graph -->
+    <%- open_graph({
+        twitter_id: __('theme.head.og.twitter_id'),
+        twitter_site: __('theme.head.og.twitter_site'),
+        fb_admins: __('theme.head.og.fb_admins'),
+        fb_app_id: __('theme.head.og.fb_app_id'),
+    }) %>
+</head>

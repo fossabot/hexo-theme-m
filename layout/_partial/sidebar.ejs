@@ -1,0 +1,67 @@
+<div class="mdui-drawer" id="left-drawer">
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+    <li class="mdui-list-item mdui-ripple">
+        <% if(theme.img.avatar) {%>
+            <div class="mdui-list-item-avatar"><img src="<%= theme.img.avatar %>"></div>
+        <% } else { %>
+            <i class="mdui-list-item-avatar mdui-icon material-icons">person</i>
+        <% } %>
+        <div class="mdui-list-item-content"><%= config.author %></div>
+    </li>
+        <li class="mdui-divider"></li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/'">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <div class="mdui-list-item-content"><%= __('sidebar.homepage') %></div>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
+                <div class="mdui-list-item-content"><%= __('sidebar.archive') %></div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <%- list_archives({
+                    show_count: false,
+                    class: 'mdui-list-item mdui-ripple m',
+                    style: 'none',
+                    separator: ''
+                }) %>
+            </ul>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                <div class="mdui-list-item-content"><%= __('sidebar.category') %></div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <%- list_categories({
+                    show_count: false,
+                    class: 'mdui-list-item mdui-ripple m',
+                    style: 'none',
+                    separator: ''
+                }) %>
+            </ul>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">local_offer</i>
+                <div class="mdui-list-item-content"><%= __('sidebar.tag') %></div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <li>
+                <div class="mdui-chip mdui-m-x-1 mdui-ripple">
+                    <%- list_tags({
+	                    show_count: false,
+	                    class: 'mdui-chip-title m',
+                        style: '',
+		                separator: '</div><div class="mdui-chip mdui-m-r-1 mdui-m-t-1 mdui-ripple">'
+		            }) %>
+                </div>
+            </ul>
+        </li>
+        <li class="mdui-divider"></li>
+        <%- partial('_widget/footer') %>
+    </ul>
+</div>

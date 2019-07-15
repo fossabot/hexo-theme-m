@@ -1,0 +1,21 @@
+<div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide" style="transition: background-color .3s;">
+    <div class="mdui-toolbar">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></button>
+        <a class="mdui-typo-title"><%= config.title %></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">rss</i></a>
+        <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+    </div>
+</div>
+    <% if(!is_home() && !is_archive()) { %>
+    <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed" mdui-headroom="{pinnedClass: 'm-unpinned', unpinnedClass: 'm-pinned'}" style="visibility: hidden; transition: background-color .3s;">
+        <div class="mdui-toolbar m-toolbar-second" style="transition: all 0.5s linear;">
+            <button class="mdui-btn mdui-btn-icon" onclick="window.location.href='/'"><i class="mdui-icon material-icons">close</i></button>
+            <a class="mdui-typo-title"><%= page.title %></a>
+            <div class="mdui-toolbar-spacer"></div>
+            <!-- <a class="mdui-btn mdui-hidden-sm-down"><i class="mdui-icon mdui-icon-left material-icons">access_time</i>11 mins remaining</a>
+            <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">forum</i></a>
+            <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">format_list_numbered</i></a> -->
+        </div>
+        </div>
+    <% } %>

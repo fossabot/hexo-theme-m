@@ -1,0 +1,43 @@
+<% if(!post.thumbnail) { %>
+    <% if(post.photos && post.photos.length) { %>
+        <% if(is_post() | is_page()) { %>
+            <div onclick="" class="mdui-card-media mdui-ripple" style="max-height: 320px">
+        <% } else {%>
+            <div onclick="location.href='<%- url_for(post.path) %>'" class="mdui-card-media mdui-ripple" style="max-height: 320px">
+        <% } %>
+            <% post.photos.forEach(function(photo, i){ %>
+                <img class="mdui-img-fluid mdui-center" src="<%- url_for(photo) %>" alt="<%= post.title %>">
+            <% }) %>
+            <div class="mdui-card-media-covered <% if(theme.mdui.card_media_covered === 'gradient') { %>mdui-card-media-covered-gradient<% } else if(theme.mdui.card_media_covered === 'transparent') { %>mdui-card-media-covered-transparent<% } %>">
+                <div class="mdui-card-primary">
+                    <%- partial('_partial/post/title', {post: post}) %>
+                </div>
+            </div>
+        </div>
+    <% } else { %>
+        <% if(theme.post.thumbnail === 'random') { %>
+            <!-- TODO: random thumbnail -->
+        <% } else { %>
+            <% if(is_post() | is_page()) { %>
+                <div class="mdui-card-primary mdui-ripple" onclick="">
+            <% } else { %>
+                <div class="mdui-card-primary mdui-ripple" onclick="location.href='<%- url_for(post.path) %>'">
+            <% } %>
+                <%- partial('_partial/post/title', {post: post}) %>
+            </div>
+        <% } %>
+    <% } %>
+<% } else { %>
+    <% if(is_post() | is_page()) { %>
+    <div onclick="" class="mdui-card-media mdui-ripple" style="max-height: 320px">
+    <% } else { %>
+    <div onclick="location.href='<%- url_for(post.path) %>'" class="mdui-card-media mdui-ripple" style="max-height: 320px">
+    <% } %>
+        <img class="mdui-img-fluid mdui-center" src="<%= post.thumbnail %>" alt="<%= post.title %>">
+        <div class="mdui-card-media-covered <% if(theme.mdui.card_media_covered === 'gradient') { %>mdui-card-media-covered-gradient<% } else if(theme.mdui.card_media_covered === 'transparent') { %>mdui-card-media-covered-transparent<% } %>">
+            <div class="mdui-card-primary">
+                <%- partial('_partial/post_entry_title', {post: post}) %>
+            </div>
+        </div>
+    </div>
+<% } %>

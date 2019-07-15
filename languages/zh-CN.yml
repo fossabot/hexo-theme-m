@@ -1,0 +1,14 @@
+sidebar:
+    homepage: "主页"
+    archive: "归档"
+    category: "分类"
+    tag: "标签"
+
+index:
+    continue: "阅读全文"
+    prev: '<i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>上一页'
+    next: '<i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>下一页'
+
+post:
+    date: "创建日期"
+    updated: "最后更新日期"
