@@ -4,6 +4,7 @@ head:
     favicon:
     high_res_favicon:
     apple_touch_icon:
+    android_chrome_color:
     og:
         twitter_id:
         twitter_site:
