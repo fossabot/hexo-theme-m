@@ -1,0 +1,70 @@
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+.m-pinned {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.m-unpinned {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  z-index: -1;
+}
+.m-theme-layout-light .m-appbar {
+  background-color: rgba(255,255,255,0.3) !important;
+}
+.mdui-theme-layout-dark .m-appbar {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+.m-appbar-transparent {
+  background-color: rgba(0,0,0,0) !important;
+}
+.m-icon {
+  color: inherit !important;
+}
+.m-link {
+  text-decoration: none;
+}
+.m-typo-link {
+  text-decoration: none;
+  color: #fff;
+}
+.m-typo-count {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 599px) {
+  .m-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 100% !important;
+  }
+}
+.page-number {
+  display: none;
+}
+.m-avatar {
+  transition: 1s all;
+}
+.m-avatar:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -transform: rotate(360deg);
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
