@@ -2,7 +2,7 @@
     <ul class="mdui-list" mdui-collapse="{accordion: true}">
     <li class="mdui-list-item mdui-ripple">
         <% if(theme.img.avatar) {%>
-            <div class="mdui-list-item-avatar"><img src="<%= theme.img.avatar %>"></div>
+            <div class="mdui-list-item-avatar"><img class="<% if(theme.style.m_avatar === true) { %>m-avatar<% } %>" src="<%= theme.img.avatar %>"></div>
         <% } else { %>
             <i class="mdui-list-item-avatar mdui-icon material-icons">person</i>
         <% } %>
