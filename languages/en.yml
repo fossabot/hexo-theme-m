@@ -1,3 +1,7 @@
+appbar:
+    time: "Reading time"
+    time_minutes: "mins."
+
 sidebar:
     homepage: "Home"
     archive: "Archives"

@@ -25,6 +25,15 @@ style:
     m_container: true
     m_avatar: true
 
+mdui:
+    primary: blue # red / pink / purple / deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange / brown / grey / blue-grey
+    accent: blue # red / pink / purple deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange
+    layout: dark # dark / light
+    card_media_covered: default # default / gradient / transparent
+    shadow: '0' # 0(false) / 1-16(true)
+    hoverable: true # false(none) / true(mdui-hoverable)
+    url: local
+
 img:
     avatar: ""
 
@@ -34,14 +43,8 @@ post:
     show_categories: true # true / false
     show_tags: true # true /false
 
-mdui:
-    primary: blue # red / pink / purple / deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange / brown / grey / blue-grey
-    accent: blue # red / pink / purple deep-purple / indigo / blue / light-blue / cyan / teal / green / light-green / lime / yellow / amber / orange / deep-orange
-    layout: dark # dark / light
-    card_media_covered: default # default / gradient / transparent
-    shadow: '0' # 0(false) / 1-16(true)
-    hoverable: true # false(none) / true(mdui-hoverable)
-    url: local
+appbar:
+    min2read: false # hexo-wordcount
 
 footer:
     copyright_since: 

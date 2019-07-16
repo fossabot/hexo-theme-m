@@ -15,8 +15,10 @@
             <button class="mdui-btn mdui-btn-icon" onclick="window.location.href='<%= config.url %>'"><i class="mdui-icon material-icons">close</i></button>
             <a class="mdui-typo-title"><%= page.title %></a>
             <div class="mdui-toolbar-spacer"></div>
-            <!-- <a class="mdui-btn mdui-hidden-sm-down"><i class="mdui-icon mdui-icon-left material-icons">access_time</i>11 mins remaining</a>
-            <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">forum</i></a>
+            <% if(theme.appbar.min2read === true) { %>
+                <a class="mdui-btn mdui-hidden-sm-down"><i class="mdui-icon mdui-icon-left material-icons">access_time</i><%= __('appbar.time') %> <%= min2read(page.content) %> <%= __('appbar.time_minutes') %></a>
+            <% } %>
+            <!-- <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">forum</i></a>
             <a class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">format_list_numbered</i></a> -->
         </div>
         </div>
