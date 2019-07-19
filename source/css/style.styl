@@ -11,14 +11,6 @@ html
     opacity: 0 !important
     z-index: -1
 
-.m-theme-layout-light
-    .m-appbar
-        background-color: rgba(255,255,255,.3) !important
-
-.mdui-theme-layout-dark
-    .m-appbar
-        background-color: rgba(0,0,0,.2) !important
-
 .m-appbar-transparent
     background-color: rgba(0,0,0,.0) !important
 
@@ -54,17 +46,4 @@ html
     -ms-transform: rotate(360deg)
     -transform: rotate(360deg)
 
-// page.content
-.video-container
-    position: relative
-    padding-bottom: 56.25%
-    height: 0
-    overflow: hidden
-    iframe,
-    object,
-    embed
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
+@import "_partial/content";

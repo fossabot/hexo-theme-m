@@ -4,10 +4,10 @@
 <h1 align="center">Theme M</h1>
 
 <p align="center">
-<img alt="Version" src="https://img.shields.io/github/release/0xb917/hexo-theme-m.svg">
-<img alt="Hexo" src="https://img.shields.io/badge/hexo-3.0%2B-blue.svg">
-<img alt="node.js" src="https://img.shields.io/badge/node.js-6.0%2B-green.svg">
-<img alt="License" src="https://img.shields.io/github/license/0xb917/hexo-theme-m.svg">
+<img alt="version" src="https://img.shields.io/github/release/0xb917/hexo-theme-m.svg">
+<img alt="hexo" src="https://img.shields.io/badge/hexo-3.0%2B-0e83cd.svg">
+<img alt="node.js" src="https://img.shields.io/badge/node.js-stable-026e00.svg">
+<img alt="license" src="https://img.shields.io/github/license/0xb917/hexo-theme-m.svg">
 <img alt="author" src="https://img.shields.io/badge/author-0xB917-lightgrey.svg">
 </p>
 

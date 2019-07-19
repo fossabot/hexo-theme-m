@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html <% if(config.language !== null) { %>lang="<%- config.language.substring(0,2) %>"<% } %>>
     <%- partial('_partial/head') %>
-    <body class="mdui-theme-primary-<%= theme.mdui.primary %> mdui-theme-accent-<%= theme.mdui.accent %> <% if (theme.mdui.layout === 'dark') { %>mdui-theme-layout-dark<% } else { %>m-theme-layout-light<% } %> mdui-appbar-with-toolbar mdui-drawer-body-left" style="<%= theme.style.background %>">
+    <body class="mdui-theme-primary-<%= theme.mdui.primary %> mdui-theme-accent-<%= theme.mdui.accent %> <% if (theme.mdui.layout === 'dark') { %>mdui-theme-layout-dark<% } %> mdui-appbar-with-toolbar mdui-drawer-body-left" style="<%= theme.style.background %>">
         <%- partial('_partial/appbar') %>
         <%- partial('_partial/sidebar') %>
-        <main class="<% if(theme.style.m_container === true) { %>m-container<% } %> mdui-container mdui-p-x-0">
+        <main class="<% if(theme.style.m_container === true) { %>m-container <% } %>mdui-container mdui-p-x-0">
             <div class="mdui-row mdui-center" style="max-width: 840px">
                 <%- body %>
             </div>
