@@ -3,10 +3,8 @@
     <%- partial('_partial/post/primary', {post: post}) %>
     <%- partial('_partial/post/actions', {post: post}) %>
     <% if(post.excerpt && theme.post.excerpt === 'content') { %>
-        <div class="mdui-card-content">
-            <div class="mdui-typo">
-                <%- post.excerpt %>
-            </div>
+        <div class="mdui-card-content mdui-typo m-content">
+            <%- post.excerpt %>
             <a class="mdui-btn mdui-btn-block mdui-ripple" href="<%- url_for(post.path) %>"><%= __('index.continue') %></a>
         </div>
     <% } %>
