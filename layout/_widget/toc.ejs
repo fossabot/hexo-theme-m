@@ -1,0 +1,17 @@
+<li class="mdui-collapse-item <% if(theme.sidebar.toc.collapse_item_open === true) { %>mdui-collapse-item-open<% } %>">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons"><% if(theme.sidebar.toc.list_number === true) { %>format_list_numbered<% } else { %>format_list_bulleted<% } %></i>
+        <div class="mdui-list-item-content"><%= __('sidebar.toc') %></div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-typo">
+        <% if (theme.sidebar.toc.list_number === true) { %>
+            <%- toc(page.content, {class: 'm-toc', list_number: true}) %>
+        <% } else { %>
+            <%- toc(page.content, {class: 'm-toc', list_number: false}) %>
+        <% } %>
+    </ul>
+</li>
+<% if(theme.sidebar.toc.divider === true) { %>
+    <li class="mdui-divider"></li>
+<% } %>

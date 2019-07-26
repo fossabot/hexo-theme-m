@@ -3,10 +3,11 @@ appbar:
     time_minutes: "mins."
 
 sidebar:
-    homepage: "Home"
-    archive: "Archives"
-    category: "Categories"
-    tag: "Tags"
+    toc: "Table of Contents"
+    home: "Home"
+    archives: "Archives"
+    categories: "Categories"
+    tags: "Tags"
 
 index:
     continue: "Read all"

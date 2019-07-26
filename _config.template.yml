@@ -46,6 +46,13 @@ post:
 appbar:
     min2read: false # hexo-wordcount
 
+sidebar:
+    toc:
+        enable: true
+        list_number: false
+        collapse_item_open: true
+        divider: true
+
 footer:
     copyright_since: 
     hostedon: 

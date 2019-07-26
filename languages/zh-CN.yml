@@ -3,10 +3,11 @@ appbar:
     time_minutes: "分钟"
 
 sidebar:
-    homepage: "主页"
-    archive: "归档"
-    category: "分类"
-    tag: "标签"
+    toc: "文章目录"
+    home: "主页"
+    archives: "归档"
+    categories: "分类"
+    tags: "标签"
 
 index:
     continue: "阅读全文"

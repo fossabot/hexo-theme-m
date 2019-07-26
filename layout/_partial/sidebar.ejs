@@ -1,22 +1,25 @@
 <div class="mdui-drawer" id="left-drawer">
     <ul class="mdui-list" mdui-collapse="{accordion: true}">
-    <li class="mdui-list-item mdui-ripple" onclick="location.href='<%= theme.url.sidebar_avatar %>'">
-        <% if(theme.img.avatar) {%>
-            <div class="mdui-list-item-avatar"><img class="<% if(theme.style.m_avatar === true) { %>m-avatar<% } %>" src="<%= theme.img.avatar %>"></div>
-        <% } else { %>
-            <i class="mdui-list-item-avatar mdui-icon material-icons">person</i>
-        <% } %>
-        <div class="mdui-list-item-content"><%= config.author %></div>
-    </li>
+        <li class="mdui-list-item mdui-ripple" onclick="location.href='<%= theme.url.sidebar_avatar %>'">
+            <% if(theme.img.avatar) {%>
+                <div class="mdui-list-item-avatar"><img class="<% if(theme.style.m_avatar === true) { %>m-avatar<% } %>" src="<%= theme.img.avatar %>"></div>
+            <% } else { %>
+                <i class="mdui-list-item-avatar mdui-icon material-icons">person</i>
+            <% } %>
+            <div class="mdui-list-item-content"><%= config.author %></div>
+        </li>
         <li class="mdui-divider"></li>
+        <% if( (page.toc === true) || (is_post() && theme.sidebar.toc.enable === true && page.toc !== false) ) { %>
+            <%- partial('_widget/toc') %>
+        <% } %>
         <li class="mdui-list-item mdui-ripple" onclick="location.href='<%= config.url %>'">
             <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-            <div class="mdui-list-item-content"><%= __('sidebar.homepage') %></div>
+            <div class="mdui-list-item-content"><%= __('sidebar.home') %></div>
         </li>
         <li class="mdui-collapse-item">
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons">inbox</i>
-                <div class="mdui-list-item-content"><%= __('sidebar.archive') %></div>
+                <div class="mdui-list-item-content"><%= __('sidebar.archives') %></div>
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
             </div>
             <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
@@ -31,7 +34,7 @@
         <li class="mdui-collapse-item">
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
-                <div class="mdui-list-item-content"><%= __('sidebar.category') %></div>
+                <div class="mdui-list-item-content"><%= __('sidebar.categories') %></div>
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
             </div>
             <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
@@ -46,7 +49,7 @@
         <li class="mdui-collapse-item">
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons">local_offer</i>
-                <div class="mdui-list-item-content"><%= __('sidebar.tag') %></div>
+                <div class="mdui-list-item-content"><%= __('sidebar.tags') %></div>
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
             </div>
             <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
