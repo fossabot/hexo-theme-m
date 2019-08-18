@@ -43,5 +43,9 @@
 ## License
 
 ![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F0xb917%2Fhexo-theme-m.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F0xb917%2Fhexo-theme-m?ref=badge_shield)
 
 This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See the [LICENSE](https://github.com/0xb917/hexo-theme-m/blob/master/LICENSE) file for more details.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F0xb917%2Fhexo-theme-m.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F0xb917%2Fhexo-theme-m?ref=badge_large)
